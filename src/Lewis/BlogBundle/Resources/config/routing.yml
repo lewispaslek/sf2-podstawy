@@ -1,0 +1,5 @@
+lewis_blog_annotations:
+    resource: "@LewisBlogBundle/Controller"
+    type: annotation
+    
+

@@ -1,0 +1,25 @@
+{% extends "LewisBlogBundle::base.html.twig" %} 
+
+{% block title %} Rejestracja {% endblock %}
+{% block header %}{% include 'LewisBlogBundle::header.html.twig' %}{% endblock %}
+
+{% block body %}
+
+    <section class="register">
+        <div class="container">
+            {% if form is not null %}
+            <h3>Rejestracja</h3>
+            {{ form(form, {'attr': {'novalidate': 'true'}} ) }}
+            {% else %}
+                <div class="panel panel-success">
+                    <div class="panel-heading">Już masz u nas konto</div>
+                    <div class="panel-body">Twoje konto istnieje w systemie</div>
+                </div>
+            {% endif %}
+        </div>
+    </section>
+    
+{% endblock %}
+
+
+{% block footer %}{% include 'LewisBlogBundle::footer.html.twig' %}{% endblock %}

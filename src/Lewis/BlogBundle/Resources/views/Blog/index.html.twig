@@ -1,0 +1,28 @@
+{% extends "LewisBlogBundle::base.html.twig" %} 
+
+{% block title %} Strona główna {% endblock %}
+{% block header %}{% include 'LewisBlogBundle::header.html.twig' %}{% endblock %}
+
+{% block body %}
+
+    <section class="index">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consetetur adipiscing elit. Sed velit felis, iaculis in elementum vel, consectetur sed lacus. Cras nisi purus, sollicitudin et scelerisque nec, pellentesque ut nibh. Cras ultrices urna vel odio finibus, non imperdiet ex bibendum. Vivamus sed bibendum massa, vel commodo ante. Mauris auctor elit sem, a tristique tortor facilisis vitae. Aenean blandit nulla sed arcu laoreet condimentum. Phasellus commodo lorem lacus, eu euismod odio vulputate ac. In malesuada congue purus vel commodo. Mauris sem libero, suscipit eu condimentum vel, dignissim nec urna. Ut orci eros, tempor ac dictum ac, pretium nec nulla. Vivamus non maximus nisl. Etiam finibus magna sit amet odio fermentum viverra in ut diam. Proin convallis elit in accumsan posuere.</p>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce volutpat sem facilisis, porttitor lectus et, tincidunt nunc. Donec ac nunc nunc. Quisque faucibus quam sed nunc sodales, at molestie turpis vulputate. Sed in lacinia nunc, viverra viverra metus. In sem urna, pulvinar vitae odio eu, suscipit fringilla odio. Maecenas eu convallis lacus. Fusce at pulvinar nibh. Integer facilisis sapien ut risus scelerisque, nec ultrices lectus commodo. Nam consectetur pharetra aliquet. Duis posuere erat sed mi posuere, eget malesuada quam finibus. Suspendisse ultrices tristique rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent ex dolor, tempus at convallis sit amet, vulputate ut dolor. Ut feugiat erat quis nulla vestibulum, vel vestibulum odio tincidunt.</p>
+                    <p>Donec nec sem at ligula convallis porta et vehicula mauris. Donec mattis lectus quis justo volutpat, sit amet porta velit tincidunt. Cras commodo fringilla vulputate. Maecenas vel porttitor turpis, sit amet vestibulum nulla. Nunc sit amet nulla varius, pretium diam quis, dictum turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc vitae ante sit amet neque tristique ultrices. Quisque ex lectus, elementum eu molestie at, tincidunt quis elit. Aliquam vitae pretium libero, eu iaculis lorem. Duis aliquam erat purus, vel vestibulum massa aliquet nec. Morbi vitae efficitur nisi.</p>
+                    <p>Etiam vitae tempus dolor. Vestibulum eget urna urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In elementum turpis ipsum, quis ullamcorper nisl pulvinar eu. Nunc pulvinar pulvinar mollis. Vivamus feugiat nisi in enim aliquet sagittis. Phasellus sit amet ante lacinia, convallis neque eget, bibendum dolor. Nam lacinia, velit ac aliquet accumsan, quam purus hendrerit dolor, nec fermentum arcu lorem ut enim. Morbi aliquam varius tortor vitae congue. Sed congue tincidunt risus. Cras eu malesuada urna. Maecenas id tellus in mi interdum ullamcorper.</p>
+                    <p>Cras sed dui mi. Proin non egestas magna. Maecenas libero orci, rutrum eu lobortis mattis, congue blandit risus. Vestibulum metus dui, laoreet id fermentum eu, posuere id magna. Nullam quis eleifend risus. Nulla mattis faucibus eros, vel accumsan lorem sagittis at. Donec dapibus volutpat ultrices. Mauris mattis eu arcu vel consectetur.</p>
+                </div>
+                <div class="col-md-4">
+                    {% include 'LewisBlogBundle:Blog/Widgets:widget1.html.twig' %}
+                </div>
+            </div>
+        </div>
+    </section>
+    
+{% endblock %}
+
+{% block footer %}{% include 'LewisBlogBundle::footer.html.twig' %}{% endblock %}
+

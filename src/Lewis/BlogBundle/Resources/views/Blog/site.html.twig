@@ -1,0 +1,18 @@
+{% extends "LewisBlogBundle::base.html.twig" %} 
+
+{% block title %} Strona przykładowa {% endblock %}
+{% block header %}{% include 'LewisBlogBundle::header.html.twig' %}{% endblock %}
+
+
+{% block body %}
+
+    <section class="index">
+        <div class="container">
+            Site {{ nazwa }}
+        </div>
+    </section>
+    
+{% endblock %}
+
+
+{% block footer %}{% include 'LewisBlogBundle::footer.html.twig' %}{% endblock %}
