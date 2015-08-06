@@ -3,12 +3,48 @@
 namespace Lewis\BlogBundle\Entity;
 
 use Symfony\Component\Validator\Constraints as Assert;
+use Doctrine\ORM\Mapping as ORM;
 
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="Registrations")
+ */
 class Register {
+    
+    /**
+     *
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+    
+    /**
+     *
+     * @ORM\Column(type="string", length=255)
+     */
     private $name;
+    
+    /**
+     *
+     * @ORM\Column(type="string", length=255)
+     */
     private $email;
+    /**
+     *
+     * @ORM\Column(type="string", length=128)
+     */
     private $password;
+    /**
+     *
+     * @ORM\Column(type="string", length=1)
+     */
     private $sex;
+    /**
+     *
+     * @ORM\Column(type="date", nullable=true)
+     */
     private $birthdate;
     
     function getName() {
